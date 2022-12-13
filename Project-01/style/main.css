@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap");
+* {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+body {
+  background-color: antiquewhite;
+  height: 1000px;
+  margin: 0;
+}
+
+header {
+  padding: 2rem;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-spacing: 0;
+}
+
+table {
+  margin: 0 auto 150px;
+  width: 83vw;
+  table-layout: fixed;
+}
+
+th {
+  width: 20%;
+}
+
+th:nth-of-type(2) {
+  width: 35%;
+}
+
+th:nth-of-type(3) {
+  width: 45%;
+}
+
+h1,
+th,
+td {
+  font-family: "EB Garamond";
+}
+
+th,
+td {
+  padding: 5px;
+}
+
+th {
+  font-weight: bold;
+  font-size: larger;
+}
+
+h1 {
+  padding-top: 0;
+  margin-top: 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.bullet {
+  display: none;
+}
+
+.property,
+.value {
+  font-family: monospace;
+  font-weight: bolder;
+  letter-spacing: 0.1rem;
+}
+
+.value {
+  color: blue;
+}
+
+.property {
+  color: darkgreen;
+}
+
+.italic {
+  /*font-family: inherit;*/
+  font-style: italic;
+  color: black;
+}
+
+.tablehead tr {
+  opacity: 1 !important;
+}
+
+table:hover tr {
+  opacity: 0.6;
+}
+
+table tr:hover {
+  position: relative;
+  z-index: 2;
+  transform: scale(1.15);
+  opacity: 1;
+  background-color: black;
+  border-style: solid 2px;
+  border-color: antiquewhite;
+}
+
+tr:hover :nth-child(1) {
+  color: aqua;
+  font-size: larger;
+  border-style: none;
+}
+
+tr:hover :nth-child(2) {
+  color: darkorange;
+  font-size: larger;
+  /*border-left: solid 2px;
+    border-left-color: antiquewhite;*/
+  border-style: none;
+}
+
+tr:hover :nth-child(3) {
+  color: antiquewhite;
+  font-size: larger;
+  /*border-left: solid 2px;
+    border-left-color: antiquewhite;*/
+  border-style: none;
+}
+
+tr:hover .italic {
+  color: whitesmoke;
+  border-style: none;
+  font-size: smaller;
+}
+
+tr:hover .bullet {
+  display: unset;
+  color: antiquewhite;
+}
+
+.tablehead:hover {
+  pointer-events: none;
+}
+
+.tablefoot:hover td {
+  background-color: black;
+  color: antiquewhite;
+  font-size: larger;
+}
+
+.tablefoot:hover .value {
+    color: darkorange;
+    font-size: 1.1em;
+}
