@@ -99,11 +99,16 @@ table:hover tr {
 table tr:hover {
   position: relative;
   z-index: 2;
-  transform: scale(1.15);
+  transform: scale(1.15, 1.05);
   opacity: 1;
+  padding: 5px;
   background-color: black;
   border-style: solid 2px;
   border-color: antiquewhite;
+}
+
+table tr:hover ~ tr {
+  pointer-events: none;
 }
 
 tr:hover :nth-child(1) {
@@ -115,16 +120,12 @@ tr:hover :nth-child(1) {
 tr:hover :nth-child(2) {
   color: darkorange;
   font-size: larger;
-  /*border-left: solid 2px;
-    border-left-color: antiquewhite;*/
   border-style: none;
 }
 
 tr:hover :nth-child(3) {
   color: antiquewhite;
-  font-size: larger;
-  /*border-left: solid 2px;
-    border-left-color: antiquewhite;*/
+  font-size: 1.1em;
   border-style: none;
 }
 
@@ -153,3 +154,42 @@ tr:hover .bullet {
     color: darkorange;
     font-size: 1.1em;
 }
+
+th.col-value, td.col-value {
+  display: none;
+}
+
+tr:hover:active .col-value {
+  display: table-cell;
+  border-style: none;
+  background-color: brown;
+}
+
+tr:active .col-property {
+  display: none;
+  
+}
+
+tr:hover:active td {
+  width: 20% !important;
+}
+
+tr:hover:active td:nth-of-type(2) {
+  width: 20% !important;
+}
+
+tr:hover:active td:nth-of-type(4) {
+  width: 60% !important;
+}
+
+/*tr:active :nth-child(1) {
+  width: 20%;
+}
+
+tr:active :nth-child(2) {
+  width: 20%;
+}
+
+tr:active :nth-child(4) {
+  width: 60%;
+}*/
