@@ -1,0 +1,200 @@
+
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: seashell;
+}
+
+html,
+body,
+h2,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  opacity: 0.9;
+}
+
+h2 {
+  font-size: 33px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+.main-nav-list ul {
+  margin: 0;
+}
+
+.main-nav-list li {
+  display: inline;
+}
+
+.main-nav-list a {
+  display: inline-block;
+  margin-right: 20px;
+  padding-right: 5px;
+  font-size: 20px;
+}
+
+.logo img {
+  height: 50px;
+  margin-left: 10px;
+}
+
+.header {
+  height: 69px;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-around;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  background-color: black;
+  width: 100vw;
+  top: 0px;
+}
+
+div.logo {
+  height: 50px;
+}
+
+main {
+  margin-top: 69px;
+}
+
+.banner-background {
+  background-image: url("../style/images/img-mission-background.jpg");
+  width: 1200px;
+  height: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.banner {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: black;
+}
+
+h2,
+h4 {
+  padding: 10px 0px 10px;
+}
+
+.offers {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.offers-header {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 16px;
+}
+
+.offers-main {
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  row-gap: 10px;
+}
+
+.product-image img {
+  height: 200px;
+  width: 300px;
+}
+
+div.product-name {
+  padding: 0;
+}
+
+h6 {
+  text-align: center;
+  font-size: 22px;
+  padding: 0;
+  margin: 10px;
+}
+
+.locations-background {
+  background-image: url("../style/images/img-locations-background.jpg");
+  height: 500px;
+  width: 1200px;
+  margin: 80px auto 0px;
+  background-position-y: -50px;
+}
+
+.locations {
+  position: relative;
+  height: 500px !important;
+  display: flex;
+  flex-flow: column;
+}
+
+.locations-header {
+  display: inline-block;
+  width: fit-content;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 74px;
+}
+
+.locations-main {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: auto;
+}
+
+.address-box {
+  min-width: 300px;
+  background-color: black;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.address p {
+    font-size: 18px;
+}
+
+
+h3 {
+    font-size: 22px;
+    margin: 20px;
+}
+
+.footer {
+    height: 275px;
+}
+
+.footer-main {
+    height: 200px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.email{
+    margin: 30px;
+}
+
+.copyright {
+    margin: 20px;
+}
